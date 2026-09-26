@@ -21,13 +21,13 @@ while not button_b.was_pressed():
     elif button_a.was_pressed():
         display.scroll(str(temperature()) + ".C")
     if temperature() < 21:
-        display.scroll("Wear a jacket")
+        display.scroll("Wear a jacket", delay=100)
         display.show(Image.UMBRELLA)
     elif temperature() > 30:
-        display.scroll("Break out the speedos")
+        display.scroll("Break out the speedos", delay=100)
         display.show(speedos)
-    elif temperature() > 21:
-        display.scroll("Wear a hat")
+    else:
+        display.scroll("Wear a hat", delay=100)
         display.show(hat)    
         sleep(1000)
 display.scroll("STOPPED")        
