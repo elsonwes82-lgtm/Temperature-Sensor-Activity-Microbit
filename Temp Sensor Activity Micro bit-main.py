@@ -30,6 +30,7 @@ while not button_b.was_pressed():
         display.scroll("Wear a hat", delay=100)
         display.show(hat)    
         sleep(1000)
-display.scroll("STOPPED")        
+display.scroll("STOPPED") #End the program/loop by pushing button B.
+#Push the reset button on the back of your microbit to restart the program.
     
         
